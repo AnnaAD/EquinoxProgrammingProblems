@@ -1,4 +1,4 @@
-.metadata/
+/.metadata/*
 bin/
 tmp/
 *.tmp
@@ -8,7 +8,7 @@ tmp/
 local.properties
 .settings/
 .loadpath
-.recommenders/
+/.recommenders/*
 
 # External tool builders
 .externalToolBuilders/
