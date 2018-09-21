@@ -1,4 +1,4 @@
-/.metadata/*
+.metadata/*
 bin/
 tmp/
 *.tmp
@@ -8,7 +8,7 @@ tmp/
 local.properties
 .settings/
 .loadpath
-/.recommenders/*
+.recommenders/*
 
 # External tool builders
 .externalToolBuilders/
@@ -53,3 +53,10 @@ local.properties
 .cache-main
 .scala_dependencies
 .worksheet
+.metadata/.log
+.metadata/.plugins/org.eclipse.jdt.core/70451114.index
+.metadata/.plugins/org.eclipse.jdt.core/savedIndexNames.txt
+ProgrammingProblems/src/ScheduleMaker.java
+.metadata/.plugins/org.eclipse.jdt.core/savedIndexNames.txt
+.metadata/.plugins/org.eclipse.jdt.core/70451114.index
+.metadata/.log
