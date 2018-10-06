@@ -1,8 +1,9 @@
-
+import java.util.Scanner;
 public class PrintPlanetGreeting {
 	
 	public static void main(String args[]) {
-		String planet = "Earth";
+		Scanner s = new Scanner(System.in);
+		String planet = s.nextLine();
 		System.out.println(solution(planet));
 	}
 	
