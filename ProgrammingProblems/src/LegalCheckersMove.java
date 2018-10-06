@@ -10,11 +10,11 @@ public class LegalCheckersMove {
 						  { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 }, // 3
 						  { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 }, // 4
 						  { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 }, // 5
-						  { 0, 0, 0, 0, 0, 1, 0, 0, 0, 0 }, // 6
+						  { 0, 0, 0, 1, 0, 1, 0, 0, 0, 0 }, // 6
 						  { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 }, // 7
 						  { 0, 0, 0, 0, 0, 1, 0, 0, 0, 0 }, // 8
 						  { 0, 0, 0, 0, 0, 0, 1, 0, 0, 0 } };// 9
-		System.out.println(solution(board, new Position(6, 9), new Position(4, 5)));
+		System.out.println(solution(board, new Position(6, 9), new Position(2, 5)));
 
 	}
 
@@ -51,6 +51,7 @@ public class LegalCheckersMove {
 		return successes;
 	}
 	
+	//really only used for first possible skips...
 	public static int getSolutionAroundSkipPiece(Position startPosition, int xMove, int yMove, Position endPosition, int[][] board) {
 		int successes = 0;
 		if (startPosition.inBounds(board) && startPosition.isFull(board)) {
