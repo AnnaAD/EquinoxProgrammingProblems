@@ -1,8 +1,20 @@
+import java.util.Scanner;
 
 public class ReturnFoundCat {
 	public static void main(String args[]) {
-		float[] catCoors = {3f,3f};
-		float[][] cityCoors = {{0f,1f},{1f,2f},{2f,2f,}};
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int n = sc.nextInt();
+		
+		float[] catCoors = new float[]{sc.nextFloat(), sc.nextFloat()};
+		float[][] cityCoors = new float[n][];
+		
+		
+		
+		for(int i = 0; i < n; i++) {
+			cityCoors[i] = new float[]{sc.nextFloat(), sc.nextFloat()};
+		}
 		
 		float[] output = solution(catCoors, cityCoors);
 		
