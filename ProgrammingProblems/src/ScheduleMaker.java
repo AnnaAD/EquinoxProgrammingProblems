@@ -6,7 +6,7 @@ public class ScheduleMaker {
 	}
 	
 	public static String solution(String startTime, int bufferTime, String[][] activites) {
-		
+		return "";
 	}
 
 }
