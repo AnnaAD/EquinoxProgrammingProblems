@@ -1,20 +1,23 @@
+import java.util.Scanner;
 
 public class LegalCheckersMove {
 	// checkers is played on a 10x10 board
 	// checkers can only be placed on black squares, even rows and columns
 	public static void main(String args[]) {
-						//  0  1  2  3  4  5  6  7  8  9
-		int[][] board = { { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 }, // 0
-						  { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 }, // 1
-						  { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 }, // 2
-						  { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 }, // 3
-						  { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 }, // 4
-						  { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 }, // 5
-						  { 0, 0, 0, 1, 0, 1, 0, 0, 0, 0 }, // 6
-						  { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 }, // 7
-						  { 0, 0, 0, 0, 0, 1, 0, 0, 0, 0 }, // 8
-						  { 0, 0, 0, 0, 0, 0, 1, 0, 0, 0 } };// 9
-		System.out.println(solution(board, new Position(6, 9), new Position(2, 5)));
+		Scanner sc = new Scanner(System.in);
+		int m = sc.nextInt();
+		int n = sc.nextInt();
+		int[][] board = new int[n][m];
+		for(int i = 0; i < n; i++) {
+			for(int  j = 0; j < m; j++) {
+				board[i][j] = sc.nextInt();
+			}
+		}
+		int startpx = sc.nextInt();
+		int startpy = sc.nextInt();
+		int endpx = sc.nextInt();
+		int endpy = sc.nextInt();
+		System.out.println(solution(board, new Position(startpx, startpy), new Position(endpx, endpy)));
 
 	}
 
@@ -117,7 +120,7 @@ public class LegalCheckersMove {
 		}
 
 		public boolean isFull(int[][] board) {
-			//System.out.println("board piece: " + board[y][x]);
+			System.out.println("board piece: " + board[y][x]);
 			return (board[y][x] == 1);
 		}
 

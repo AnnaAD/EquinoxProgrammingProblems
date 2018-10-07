@@ -1,12 +1,24 @@
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class InstantRunoffVoting {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String[] candidates = {"Bob","Sue","Bill"};
-		String[] voters = {"Bob Bill Sue", "Sue Bob Bill", "Bill Sue Bob", "Bob Bill Sue","Sue Bob Bill"};
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		sc.nextLine();
+		String[] candidates = new String[n];
+		for(int i = 0; i < n; i++) {
+			candidates[i] = sc.nextLine();
+		}
+		int m = sc.nextInt();
+		sc.nextLine();
+		String[] voters = new String[m];
+		for(int i = 0; i < m; i++) {
+			voters[i] = sc.nextLine();
+		}
 		System.out.println(solution(candidates,voters));
 	}
 	
