@@ -1,9 +1,16 @@
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class PickEccentricBabyName {
 	
 	public static void main(String args[]) {
-		String[] names = {"Rose", "Raymond", "Rey", "abagail", "ada"};
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		sc.nextLine();
+		String[] names = new String[n];
+		for(int i = 0; i < n; i++) {
+			names[i] = sc.nextLine();
+		}
 		System.out.println(solution(names));
 	}
 	

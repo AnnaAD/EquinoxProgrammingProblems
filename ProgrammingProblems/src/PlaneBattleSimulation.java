@@ -1,16 +1,22 @@
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class PlaneBattleSimulation {
 	public static void main(String args[]) {
-		String[] commands = {"addPlane puppy 0 0", "addPlane wolf 0 0", "accelerate puppy 1 1", "updatePlanes", "updatePlanes", "fire puppy 1 1"};
-		String[] output = solution(commands);
-		
-		for(String o : output) {
-			System.out.println(o);
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		String[] commands = new String[n];
+		sc.nextLine();
+		for(int i = 0; i < n; i++) {
+			commands[i] = sc.nextLine();
 		}
+		
+		solution(commands);
+		
+		
 	}
 	
-	public static String[] solution(String[] commands) {
+	public static void solution(String[] commands) {
 		ArrayList<Plane> planes = new ArrayList<Plane>();
 		for(int i = 0; i < commands.length; i++) {
 			String[] parts = commands[i].split(" ");
@@ -41,13 +47,21 @@ public class PlaneBattleSimulation {
 				for(Plane p : planes) {
 					p.update();
 				}
+				printPlanes(planes);
 			}
 		}
+		
+	}
+	
+	
+	public static void printPlanes(ArrayList<Plane> planes) {
 		String[] output = new String[planes.size()];
 		for(int i = 0; i < planes.size(); i++) {
 			output[i] = planes.get(i).toString();
 		}
-		return output;
+		for(String o : output) {
+			System.out.println(o);
+		}
 	}
 	
 	private static class Plane {

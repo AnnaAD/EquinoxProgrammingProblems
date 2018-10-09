@@ -1,8 +1,21 @@
+import java.util.Scanner;
 
 public class ScheduleMaker {
 
 	public static void main(String[] args) {
-		System.out.println(solution("7:30am",5,new String[][] {{"Breakfast","15"},{"School","440"},{"Soccer","75"}}));
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		int m = sc.nextInt();
+		sc.nextLine();
+		String startTime = sc.nextLine();
+		String[][] activities = new String[n][2];
+		for(int i = 0; i < n; i++) {
+			activities[i] = sc.nextLine().split(" ");
+		}
+		
+		System.out.println(m);
+
+		System.out.println(solution(startTime, m, activities));
 	}
 	
 	public static String solution(String startTime, int bufferTime, String[][] activities) {
@@ -38,7 +51,7 @@ public class ScheduleMaker {
 		
 		String outputMinutes = currentMinutes + "";
 		if(outputMinutes.length() < 2) {
-			outputMinutes += "0";
+			outputMinutes = "0" + outputMinutes;
 		}
 		
 		return hour+":"+outputMinutes+partOfDay;

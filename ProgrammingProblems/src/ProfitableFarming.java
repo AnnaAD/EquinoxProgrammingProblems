@@ -1,11 +1,18 @@
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Scanner;
 
 public class ProfitableFarming {
 	public static void main(String args[]) {
-		System.out.println("Okay");
-		String[] crops = {"apple 10 40 10", "carrot 4 5 1"};
-		System.out.println(solution(crops, 41));
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		String[] crops = new String[n];
+		int d = sc.nextInt();
+		sc.nextLine();
+		for(int i = 0; i < n; i++) {
+			crops[i] = sc.nextLine();
+		}
+		System.out.println(solution(crops, d));
 	}
 	
 	//[0] = appleCost, [1] = appleProfit, [3] = appleTime
@@ -24,7 +31,7 @@ public class ProfitableFarming {
 		int profit = 0;
 		
 		Collections.sort(sortedCrops);
-		System.out.println(sortedCrops);
+		//System.out.println(sortedCrops);
 		
 		int day = 0;
 		while(day < periodLength) {

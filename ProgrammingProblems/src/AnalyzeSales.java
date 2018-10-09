@@ -1,10 +1,17 @@
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class AnalyzeSales {
 
 	public static void main(String args[]) {
-		String[][] sales = { { "10", "Gender : Female, Region : USA" }, { "25", "Gender : Male, Region : Canada" }, { "20", "Gender : Female, Region : Canada" }};
-		System.out.println(solution(sales, "Gender"));
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		sc.nextLine();
+		String[][] sales = new String[n][2];
+		for(int i = 0; i < n; i++) {
+			sales[i] = sc.nextLine().split(" ");
+		}
+		System.out.println(solution(sales, sc.nextLine()));
 	}
 
 	public static String solution(String[][] sales, String demographic) {
@@ -47,7 +54,7 @@ public class AnalyzeSales {
 		String[] demographicsRows = demographicsString.split(",");
 		String[][] demographicInfo = new String[demographicsRows.length][];
 		for (int i = 0; i < demographicsRows.length; i++) {
-			demographicInfo[i] = demographicsRows[i].split(" : ");
+			demographicInfo[i] = demographicsRows[i].split(":");
 			for (int j = 0; j < demographicInfo[i].length; j++) {
 				demographicInfo[i][j] = demographicInfo[i][j].trim();
 			}

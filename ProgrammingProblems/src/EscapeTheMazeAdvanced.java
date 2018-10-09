@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class EscapeTheMazeAdvanced {
 	private static int playerX = 0;
@@ -5,10 +6,15 @@ public class EscapeTheMazeAdvanced {
 	private static int playerDir = 0;
 	
 	public static void main(String args[]) {
-		int[][] maze = {{0,0,0,0,0,2},
-						{0,0,0,1,0,3},
-						{0,0,0,1,1,1},
-						{0,0,0,0,0,0}};
+		Scanner sc = new Scanner(System.in);
+		int m = sc.nextInt();
+		int n = sc.nextInt();
+		int[][] maze = new int[n][m];
+		for(int i = 0; i < n; i++) {
+			for(int  j = 0; j < m; j++) {
+				maze[i][j] = sc.nextInt();
+			}
+		}
 		System.out.println(solution(maze));
 	}
 	

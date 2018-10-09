@@ -1,12 +1,17 @@
+import java.util.Scanner;
 
 public class MapInfectionSpread {
 
 	public static void main(String[] args) {
-		int[][] map = {{0,0,0,0,0},
-					   {0,1,1,0,1},
-					   {0,2,1,0,1},
-					   {0,0,0,0,1},
-					   {1,0,0,1,2}};
+		Scanner sc = new Scanner(System.in);
+		int m = sc.nextInt();
+		int n = sc.nextInt();
+		int[][] map = new int[n][m];
+		for(int i = 0; i < n; i++) {
+			for(int  j = 0; j < m; j++) {
+				map[i][j] = sc.nextInt();
+			}
+		}
 		
 		int[][] output = solution(map);
 		

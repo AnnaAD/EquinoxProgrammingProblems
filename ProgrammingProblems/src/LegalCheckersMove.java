@@ -47,7 +47,9 @@ public class LegalCheckersMove {
 					}
 				} else {
 					//System.out.println("checking skips around: " + move);
-					successes += getSolutionAroundSkipPiece(move, xMove, yMove, endPosition, board);
+					if(move.canSkip(board)) {
+						successes += getSolutionAroundSkipPiece(move, xMove, yMove, endPosition, board);
+					}
 				}
 			}
 		}
@@ -60,7 +62,7 @@ public class LegalCheckersMove {
 		if (startPosition.inBounds(board) && startPosition.isFull(board)) {
 			Position skip = new Position(startPosition.x + xMove, startPosition.y + yMove);
 			//System.out.println("Skipping over: " + startPosition);
-			if (skip.equals(endPosition)) {
+			if (skip.equals(endPosition) && !skip.isFull(board)) {
 				successes++;
 				return successes;
 			} else {
@@ -88,10 +90,10 @@ public class LegalCheckersMove {
 			//System.out.println("inbounds: " + skipPiece.inBounds(board));
 			//System.out.println("is full: " + skipPiece.isFull(board));
 
-			if (skipPiece.inBounds(board) && skipPiece.isFull(board)) {
+			if (skipPiece.inBounds(board) && skipPiece.canSkip(board)) {
 				Position skip = new Position(startPosition.x + xMove * 2, startPosition.y + yMove * 2);
 				//System.out.println("Skipping over: " + skipPiece);
-				if (skip.equals(endPosition)) {
+				if (skip.equals(endPosition) && !skip.isFull(board)) {
 					successes++;
 					return successes;
 				} else {
@@ -120,7 +122,11 @@ public class LegalCheckersMove {
 		}
 
 		public boolean isFull(int[][] board) {
-			System.out.println("board piece: " + board[y][x]);
+			//System.out.println("board piece: " + board[y][x]);
+			return (board[y][x] == 1 || board[y][x] == 2);
+		}
+		
+		public boolean canSkip(int[][] board) {
 			return (board[y][x] == 1);
 		}
 
