@@ -9,6 +9,7 @@ public class EscapeTheMazeAdvanced {
 		Scanner sc = new Scanner(System.in);
 		int m = sc.nextInt();
 		int n = sc.nextInt();
+		sc.nextLine();
 		int[][] maze = new int[n][m];
 		for(int i = 0; i < n; i++) {
 			for(int  j = 0; j < m; j++) {
@@ -33,7 +34,7 @@ public class EscapeTheMazeAdvanced {
 		int moveCount = 0;
 		boolean found = false;
 		
-		while(maze[playerY][playerX] != 3 && moveCount < 100) {
+		while(maze[playerY][playerX] != 3 && moveCount < 1000) {
 			moveCount++;
 			int blockInFront = 1;
 			int blockToRight = 1;
@@ -42,7 +43,7 @@ public class EscapeTheMazeAdvanced {
 					blockInFront = maze[playerY-1][playerX];
 				} else if (playerDir == 270) {
 					blockToRight = maze[playerY-1][playerX];
-					System.out.println("block to north chosen");
+					//System.out.println("block to north chosen");
 				}
 			}
 			if (playerY < maze.length-1) {
@@ -58,7 +59,7 @@ public class EscapeTheMazeAdvanced {
 					blockInFront = maze[playerY][playerX+1];
 				} else if (playerDir == 0) {
 					blockToRight = maze[playerY][playerX+1];
-					System.out.println("block to east chosen");
+					//System.out.println("block to east chosen");
 				}
 			}
 			if (playerX >= 1) {
@@ -66,13 +67,13 @@ public class EscapeTheMazeAdvanced {
 					blockInFront = maze[playerY][playerX-1];
 				} else if(playerDir == 180) {
 					blockToRight = maze[playerY][playerX-1];
-					System.out.println("block to west chosen");
+					//System.out.println("block to west chosen");
 				}
 			}
 			
-			System.out.println("Right: " + blockToRight);
-			System.out.println("Front: " + blockInFront);
-			System.out.println("before move player dir:" + playerDir);
+			//System.out.println("Right: " + blockToRight);
+			//System.out.println("Front: " + blockInFront);
+			//System.out.println("before move player dir:" + playerDir);
 			
 			if(blockToRight != 1) {
 				//turn right
@@ -92,9 +93,9 @@ public class EscapeTheMazeAdvanced {
 				moveForward();
 			}
 			
-			System.out.println("after move player dir:" + playerDir);
+			//System.out.println("after move player dir:" + playerDir);
 			
-			for(int i = 0; i < maze.length; i++) {
+			/*for(int i = 0; i < maze.length; i++) {
 				for(int j = 0; j < maze[i].length; j++) {
 					if(i == playerY && j == playerX) {
 						System.out.print("p");
@@ -104,7 +105,7 @@ public class EscapeTheMazeAdvanced {
 				}
 				System.out.println();
 			}
-			System.out.println();
+			System.out.println();*/
 			
 			found = (maze[playerY][playerX] == 3);
 		}
