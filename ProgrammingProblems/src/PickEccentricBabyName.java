@@ -31,7 +31,7 @@ public class PickEccentricBabyName {
 		int greatestIndex = -1;
 		
 		for(int i = 0; i < letterFrequencies.length; i++) {
-			if(letterFrequencies[i] > 0 && letterFrequencies[i] <= greatestVal) {
+			if(letterFrequencies[i] > 0 && letterFrequencies[i] < greatestVal) {
 				greatestVal = letterFrequencies[i];
 				greatestIndex = i;
 			}
