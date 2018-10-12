@@ -1,0 +1,7 @@
+6
+addPlane firstplane 100 100
+accelerate firstplane 3 1
+updatePlanes
+addPlane secondplane 200 0
+accelerate secondplane -4 5
+updatePlanes
