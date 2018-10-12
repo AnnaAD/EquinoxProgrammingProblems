@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class LegalCheckersMove {
-	// checkers is played on a 10x10 board
+	// checkers is played on a mxn board
 	// checkers can only be placed on black squares, even rows and columns
 	public static void main(String args[]) {
 		Scanner sc = new Scanner(System.in);
