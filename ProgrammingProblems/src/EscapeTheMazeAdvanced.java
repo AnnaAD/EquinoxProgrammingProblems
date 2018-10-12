@@ -49,7 +49,7 @@ public class EscapeTheMazeAdvanced {
 			if (playerY < maze.length-1) {
 				if(playerDir == 180) {
 					blockInFront = maze[playerY+1][playerX];
-					System.out.println("block to south: " + maze[playerY+1][playerX]);
+					//System.out.println("block to south: " + maze[playerY+1][playerX]);
 				} else if (playerDir == 90) {
 					blockToRight = maze[playerY+1][playerX];
 				}
