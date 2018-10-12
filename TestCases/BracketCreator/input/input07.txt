@@ -1,0 +1,9 @@
+8
+Packers
+Cowboys
+Seahawks
+Vikings
+Patriots
+Browns
+Giants
+Steelers

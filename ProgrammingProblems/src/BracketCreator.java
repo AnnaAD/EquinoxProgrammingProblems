@@ -9,7 +9,10 @@ public class BracketCreator {
         for(int i=0; i< numTeams; i++) {
             teams.add(scan.next());
         }
-        System.out.println(seedTeams(teams));
+        teams = seedTeams(teams);
+        for(int i=0; i < teams.size(); i++) {
+            System.out.print(teams.get(i) + " ");
+        }
 
     }
 
