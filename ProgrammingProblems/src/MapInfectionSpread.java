@@ -17,7 +17,7 @@ public class MapInfectionSpread {
 		
 		for(int[] i : output) {
 			for(int j : i) {
-				System.out.print(j);
+				System.out.print(j + " ");
 			}
 			System.out.println();
 		}
@@ -28,7 +28,7 @@ public class MapInfectionSpread {
 	
 	public static int[][] solution(int[][] map){
 		for(int i = 0; i < map.length; i++) {
-			for(int j = 0; j < map[0].length; j++) {
+			for(int j = 0; j < map[i].length; j++) {
 				if(map[i][j] == 2) {
 					spreadInfection(i,j,map);
 				}
@@ -46,7 +46,7 @@ public class MapInfectionSpread {
 			}
 		}
 		
-		if(j < map.length-1) {
+		if(j < map[i].length-1) {
 			if(map[i][j+1] == 1) {
 				map[i][j+1] = 2;
 				spreadInfection(i,j+1,map);
