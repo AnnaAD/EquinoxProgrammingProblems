@@ -23,7 +23,7 @@ public class TemperatureDataGenerator {
 				return;
 			}
 			
-			String value = String.format("%.5g", (Math.random() * 2000) - 1000);
+			String value = ((int) (Math.random() * 2000) - 1000) + "";
 			
 			if(Math.random() > 0.5) {
 				value += "F";
