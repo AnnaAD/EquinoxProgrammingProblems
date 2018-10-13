@@ -1,0 +1,9 @@
+8
+addPlane alpha 1000 -1000
+addPlane beta 0 0
+updatePlanes
+fire alpha -1 1
+updatePlanes
+addPlane beta 0 0
+fire alpha -1 1
+updatePlanes

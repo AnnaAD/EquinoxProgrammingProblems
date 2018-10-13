@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 HighFlyer 10 45
+=======
+plane1 0 0
+>>>>>>> 8c82156c78c49eb4d8b8eb7b7a1d5af76b724f5a

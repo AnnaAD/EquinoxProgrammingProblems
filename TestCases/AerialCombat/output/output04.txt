@@ -1,6 +1,13 @@
+<<<<<<< HEAD
 HighFlyer 10 45
 LowFlyer 13 3
 HighFlyer 14 41
 LowFlyer 16 3
 HighFlyer 18 37
 LowFlyer 19 3
+=======
+alpha 1000 -1000
+beta 0 0
+alpha 1000 -1000
+alpha 1000 -1000
+>>>>>>> 8c82156c78c49eb4d8b8eb7b7a1d5af76b724f5a
