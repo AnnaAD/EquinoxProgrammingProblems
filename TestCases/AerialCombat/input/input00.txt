@@ -1,0 +1,3 @@
+2
+addPlane HighFlyer 10 45
+updatePlanes

@@ -39,6 +39,7 @@ public class PlaneBattleSimulation {
 							if(planes.get(k).checkShot(xo, yo, xf, yf) && !planes.get(k).name.equals(parts[1])) {
 								planes.remove(k);
 								k--;
+								j--;
 							}
 						}
 					}
@@ -104,7 +105,11 @@ public class PlaneBattleSimulation {
 				correctY = false;
 			}
 			
-			return (0 == (yo-yf)/(xo-xf)*(x-xf) + yf - y) && correctX && correctY;
+			/*if((xo-xf) == 0) {
+				return (0 == Math.abs(yf-y)+Math.abs(yo-y)) && correctY;
+			}*/
+			
+			return ((xo-xf)*(y-yf) == (yo-yf)*(x-xf)) && correctX && correctY;
 		}
 		
 		public String toString() {

@@ -1,3 +1,12 @@
+<<<<<<< HEAD
+HighFlyer 11 44
+LowFlyer 11 6
+HighFlyer 12 43
+LowFlyer 12 7
+HighFlyer 13 42
+LowFlyer 13 8
+HighFlyer 14 41
+=======
 p1 0 0
 p2 0 0
 p1 10 20
@@ -7,3 +16,4 @@ p2 -20 -40
 p1 30 60
 p2 -30 -60
 p1 40 80
+>>>>>>> 8c82156c78c49eb4d8b8eb7b7a1d5af76b724f5a
