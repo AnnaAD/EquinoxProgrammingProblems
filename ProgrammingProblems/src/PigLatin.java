@@ -17,7 +17,7 @@ public class PigLatin {
         }
 
         for(int i=0; i < sentenceArr.length; i++) {
-            System.out.print(sentenceArr[i] + (i == sentenceArr.length - 1 ? "\n":"  "));
+            System.out.print(sentenceArr[i] + (i == sentenceArr.length - 1 ? "\n":" "));
         }
 
     }

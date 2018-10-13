@@ -27,7 +27,7 @@ public class BlackJackGenerator {
 				return;
 			}
 			
-			for(int j = 0; j < 2; j++) {
+			for(int j = 0; j < 3; j++) {
 				int random = (int) (Math.random()*cardList.length);
 				printWriter.println(cardList[random]);
 			}

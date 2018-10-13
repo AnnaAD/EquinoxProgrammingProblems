@@ -9,17 +9,22 @@ public class BlackJackCalculator {
 		
 		String val1 = sc.nextLine();
 		String val2 = sc.nextLine();
+		String val3 = sc.nextLine();
 		
-		boolean a = false;
+		int a = 0;
 		int total = 0;
 		
 		for(int i = 0; i < cardList.length; i++) {
 			if(cardList[i].equals(val1)) {
 				if(cardList[i].equals("A")) {
-					a = true;
+					a++;
 					total += 11;
 				} else {
-					total += i+1; 
+					try {
+						total += Integer.valueOf(cardList[i]);
+					} catch (NumberFormatException e) {
+						total += 10;
+					}
 				}
 			}
 		}
@@ -27,17 +32,38 @@ public class BlackJackCalculator {
 		for(int i = 0; i < cardList.length; i++) {
 			if(cardList[i].equals(val2)) {
 				if(cardList[i].equals("A")) {
-					a = true;
+					a++;
 					total += 11;
 				} else {
-					total += i+1; 
+					try {
+						total += Integer.valueOf(cardList[i]);
+					} catch (NumberFormatException e) {
+						total += 10;
+					}
 				}
 			}
 		}
 		
-		if(a == true && total > 21) {
-			total -= 10;
+		for(int i = 0; i < cardList.length; i++) {
+			if(cardList[i].equals(val3)) {
+				if(cardList[i].equals("A")) {
+					a++;
+					total += 11;
+				} else {
+					try {
+						total += Integer.valueOf(cardList[i]);
+					} catch (NumberFormatException e) {
+						total += 10;
+					}
+				}
+			}
 		}
+		
+		while (a>0 && total > 21) {
+			total -=10;
+		}
+		
+		
 		
 		System.out.println(total);
 

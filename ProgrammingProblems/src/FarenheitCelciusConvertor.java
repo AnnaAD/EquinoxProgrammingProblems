@@ -7,10 +7,10 @@ public class FarenheitCelciusConvertor {
 		String command = sc.nextLine();
 		
 		if(command.charAt(command.length()-1) == 'F') {
-			float valF = Float.parseFloat(command.substring(0, command.length()-1));
+			int valF = Integer.parseInt(command.substring(0, command.length()-1));
 			System.out.println(((valF-32) * 5/9) + "C");
 		} else {
-			float valC = Float.parseFloat(command.substring(0, command.length()-1));
+			int valC = Integer.parseInt(command.substring(0, command.length()-1));
 			System.out.println(((valC * 9 / 5) + 32) + "F");
 		}
 	}
