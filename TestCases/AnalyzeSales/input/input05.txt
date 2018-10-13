@@ -1,0 +1,10 @@
+8
+13 Gender:Female,Region:USA
+55 Gender:Male,Region:USA
+17 Gender:Male,Region:Canada
+7 Gender:Female,Region:USA
+34 Gender:Male,Region:USA
+12 Gender:Male,Region:Canada,House:Large
+10 Gender:Female,Region:USA,House:Small
+20 Gender:Male,Region:USA,House:Large
+House

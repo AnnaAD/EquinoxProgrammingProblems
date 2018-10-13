@@ -1,0 +1,17 @@
+15
+56 Age:Young,Device:Mobile
+63 Age:Old,Device:Desktop
+37 Age:Middle,Device:Desktop
+33 Age:Middle,Device:Mobile
+84 Age:Old,Device:Mobile
+19 Age:Young,Device:Desktop
+21 Age:Young,Device:Mobile
+91 Age:Middle,Device:Mobile
+97 Age:Middle,Device:Desktop
+79 Age:Old,Device:Desktop
+6 Age:Young,Device:Mobile
+52 Age:Young,Device:Desktop
+93 Age:Middle,Device:Mobile
+100 Age:Old,Device:Desktop
+24 Age:Middle,Device:Mobile
+Age

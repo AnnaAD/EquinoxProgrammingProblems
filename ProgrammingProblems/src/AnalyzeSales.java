@@ -20,14 +20,21 @@ public class AnalyzeSales {
 		for (String[] purchase : sales) {
 			int profit = Integer.parseInt(purchase[0]);
 			String[][] demographicsInfo = makeDemographicsInfo(purchase[1]);
-
+			
+			/*for(String[] s: demographicsInfo) {
+				for(String b : s) {
+					System.out.print(b + " ");
+				}
+				System.out.println();
+			}
+			System.out.println();*/
 
 			for (int i = 0; i < demographicsInfo.length; i++) {
 				if (demographicsInfo[i][0].equals(demographic)) {
 					boolean found = false;
 					for (int j = 0; j < targetDemographicValues.size(); j++) {
 						if (targetDemographicValues.get(j).equals(demographicsInfo[i][1])) {
-							profitFromDemo.set(j, profitFromDemo.get(i)+profit);
+							profitFromDemo.set(j, profitFromDemo.get(j)+profit);
 							found = true;
 						}
 					}
