@@ -29,7 +29,7 @@ public class EvenSplit {
 				}
 			}
 			for(int i = 0; i < frequencies.size(); i++) {
-				if(frequencies.get(i) != arraySize) {
+				if(frequencies.get(i) % arraySize != 0) {
 					return false;
 				}
 			}
