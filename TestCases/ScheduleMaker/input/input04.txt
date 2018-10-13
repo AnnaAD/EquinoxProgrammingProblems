@@ -1,0 +1,13 @@
+10
+41
+9:30pm
+Eat 582
+Home 991
+Class 928
+Home 146
+Work 851
+Sleep 463
+Home 180
+Sleep 911
+Home 660
+Work 114

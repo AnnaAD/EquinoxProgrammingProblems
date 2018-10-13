@@ -13,7 +13,7 @@ public class ScheduleMaker {
 			activities[i] = sc.nextLine().split(" ");
 		}
 		
-		System.out.println(m);
+		// System.out.println(m);
 
 		System.out.println(solution(startTime, m, activities));
 	}

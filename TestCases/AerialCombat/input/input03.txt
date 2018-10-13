@@ -1,9 +1,0 @@
-8
-addPlane p1 10 20
-addPlane p2 -10 20
-updatePlanes
-accelerate p1 0 10
-accelerate p2 10 0
-updatePlanes
-fire p2 1 1
-updatePlanes

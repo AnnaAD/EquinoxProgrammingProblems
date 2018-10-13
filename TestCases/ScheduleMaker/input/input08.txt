@@ -1,0 +1,38 @@
+35
+272
+10:37pm
+Sleep 917
+Class 143
+School 521
+Class 326
+Class 882
+Work 123
+Sleep 44
+Class 857
+Home 583
+Sleep 546
+Home 491
+Class 470
+Work 728
+Home 805
+School 986
+Class 499
+School 988
+Sleep 460
+School 497
+Sleep 738
+Sleep 978
+Work 676
+Home 429
+Class 988
+Class 340
+Eat 915
+Eat 543
+Sleep 36
+Sleep 240
+Eat 446
+Sleep 77
+Eat 760
+Work 447
+Sleep 956
+Sleep 471

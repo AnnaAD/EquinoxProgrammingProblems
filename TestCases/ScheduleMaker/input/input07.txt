@@ -1,0 +1,33 @@
+30
+85
+4:53pm
+Work 268
+Home 640
+Work 836
+Sleep 421
+Eat 840
+Home 585
+Sleep 364
+Home 825
+Eat 431
+School 21
+Home 473
+School 810
+Sleep 521
+Work 963
+Home 304
+Eat 51
+Home 948
+School 461
+Sleep 763
+Eat 331
+Sleep 262
+Home 420
+Home 409
+Class 827
+School 318
+Home 754
+Work 547
+Sleep 757
+Sleep 646
+Eat 630

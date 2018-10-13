@@ -1,3 +1,0 @@
-2
-addPlane plane1 0 0
-updatePlanes

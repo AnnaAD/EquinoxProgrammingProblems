@@ -1,0 +1,1 @@
+5:00pm-6:00pm: Run | 6:05pm-6:55pm: Bike | 7:00pm-9:05pm: Lift | 9:10pm-10:30pm: Swim | 10:35pm-11:25pm: Eat | 11:30pm-12:10pm: Drive | 12:15pm-1:45am: Stretch | 1:50am-11:50am: Sleep

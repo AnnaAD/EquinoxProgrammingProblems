@@ -1,0 +1,23 @@
+20
+226
+3:46pm
+Eat 867
+Eat 717
+Eat 168
+School 929
+Eat 636
+Class 175
+Sleep 899
+School 619
+Home 770
+Eat 878
+School 390
+Home 83
+Class 625
+Sleep 56
+Work 947
+School 971
+Sleep 567
+Sleep 904
+School 318
+Sleep 734

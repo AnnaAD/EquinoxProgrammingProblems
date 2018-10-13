@@ -1,0 +1,11 @@
+8
+5
+5:00pm
+Run 60
+Bike 50
+Lift 125
+Swim 80
+Eat 50
+Drive 40
+Stretch 90
+Sleep 600
