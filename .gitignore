@@ -56,3 +56,5 @@ local.properties
 .scala_dependencies
 .worksheet
 /.metadata/
+*.class
+*.class

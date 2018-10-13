@@ -1,0 +1,7 @@
+5
+304123
+Banana 50 100 153
+Pepper 100 120 100
+Orange 0 15 20
+Dragonfruit 5 10 10
+Pickle 10 11 3
