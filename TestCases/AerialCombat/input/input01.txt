@@ -1,22 +1,6 @@
-<<<<<<< HEAD
 5
 addPlane HighFlyer 10 45
 updatePlanes
 accelerate HighFlyer 4 -4
 updatePlanes
-=======
-13
-addPlane p1 -200 200
-addPlane p2 0 0
-accelerate p2 10 5
-updatePlanes
-addPlane p3 0 0
-fire p2 10 10
-updatePlanes
-accelerate p2 80 80
-updatePlanes
-fire p2 3 3
-addPlane p4 -205 -210
-fire p1 -5 -10
->>>>>>> 8c82156c78c49eb4d8b8eb7b7a1d5af76b724f5a
 updatePlanes

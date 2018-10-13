@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 7
 addPlane HighFlyer 10 45
 addPlane LowFlyer 10 3
@@ -6,14 +5,4 @@ accelerate LowFlyer 3 0
 updatePlanes
 accelerate HighFlyer 4 -4
 updatePlanes
-=======
-8
-addPlane alpha 1000 -1000
-addPlane beta 0 0
-updatePlanes
-fire alpha -1 1
-updatePlanes
-addPlane beta 0 0
-fire alpha -1 1
->>>>>>> 8c82156c78c49eb4d8b8eb7b7a1d5af76b724f5a
 updatePlanes
