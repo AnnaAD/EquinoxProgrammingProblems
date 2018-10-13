@@ -1,0 +1,10 @@
+3
+Bob
+Bill
+Joe
+5
+Joe Bill Bob
+Bob Bill Joe
+Joe Bob Bill
+Bob Joe Bill
+Joe Bill Bob
