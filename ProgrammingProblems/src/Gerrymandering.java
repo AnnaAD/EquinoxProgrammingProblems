@@ -6,14 +6,14 @@ public class Gerrymandering {
         scan.nextLine();
         int list [] = new int[num];
         for(int i=0; i < num; i++)
-            list[i] = Integer.parseInt(scan.nextLine().trim().split(" ")[0]);
+            list[i] = Integer.parseInt(scan.nextLine().trim().split(" ")[1]);
 
         // Calculates aggregate percent of votes won
         float total = 0;
         for(int i =0; i< num; i++) {
             total += list[i];
         }
-        float aggregatepercent = total / (100f *num) * 100;
+        float aggregatepercent = total / (num);
 
         //Calculates percent of districts won
         total = 0;
@@ -24,6 +24,7 @@ public class Gerrymandering {
 
         float districtpercent = total / ((num) * 100f);
 
-        System.out.println(Math.round(Math.abs(aggregatepercent - districtpercent)));
+        System.out.println(Math.abs(aggregatepercent - districtpercent));
+
     }
 }
