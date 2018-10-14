@@ -3,7 +3,7 @@
 7:00am
 Walk 60
 Breakfast 30
-School 1000
+School 480
 Homework 80
 Dinner 80
 Bedtime 30
