@@ -1,11 +1,11 @@
 10
 addPlane p1 0 0
 addPlane p2 0 0
-updatePlanes
+movePlanes
 accelerate p1 10 20
 accelerate p2 -10 -20
-updatePlanes
-updatePlanes
-updatePlanes
+movePlanes
+movePlanes
+movePlanes
 fire p1 -1 -2
-updatePlanes
+movePlanes

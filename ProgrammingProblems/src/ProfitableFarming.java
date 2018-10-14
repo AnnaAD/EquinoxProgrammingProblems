@@ -33,6 +33,7 @@ public class ProfitableFarming {
 		Collections.sort(sortedCrops);
 		//System.out.println(sortedCrops);
 		
+		
 		int day = 0;
 		while(day < periodLength) {
 			//System.out.println("Day: " + day);
@@ -40,6 +41,7 @@ public class ProfitableFarming {
 				if(sortedCrops.get(i).canPlant(periodLength - day)) {
 					day += sortedCrops.get(i).time;
 					profit += sortedCrops.get(i).moneyMadePerSale - sortedCrops.get(i).cost;
+					//System.out.println(sortedCrops.get(i));
 					break;
 				}
 				//we can't plant anything!
@@ -59,14 +61,14 @@ public class ProfitableFarming {
 		int cost;
 		int moneyMadePerSale;
 		int time;
-		int profitperday;
+		float profitperday;
 		
 		public Crop(String name, int cost, int profit, int time) {
 			this.name = name;
 			this.cost = cost;
 			this.moneyMadePerSale = profit;
 			this.time = time;
-			this.profitperday = (cost-profit)/time;
+			this.profitperday = (cost-profit)/ (float) time;
 		}
 		
 		public boolean canPlant(int daysLeft) {
@@ -75,7 +77,12 @@ public class ProfitableFarming {
 		
 		@Override
 		public int compareTo(Object o) {
-			return this.profitperday - ((Crop)o).profitperday;
+			if((this.profitperday - ((Crop)o).profitperday) < 0) {
+				return -1;
+			} else if((this.profitperday - ((Crop)o).profitperday) > 0) {
+				return 1;
+			}
+			return 0;
 		}
 		
 		public String toString() {

@@ -1,1 +1,1 @@
-7:00am-8:00am: Walk | 8:15am-8:45am: Breakfast | 9:00am-1:40am: School | 1:55am-3:15am: Homework | 3:30am-4:50am: Dinner | 5:05am-5:35am: Bedtime
+7:00am-8:00am: Walk | 8:15am-8:45am: Breakfast | 9:00am-5:00pm: School | 5:15pm-6:35pm: Homework | 6:50pm-8:10pm: Dinner | 8:25pm-8:55pm: Bedtime
