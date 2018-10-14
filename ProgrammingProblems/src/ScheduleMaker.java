@@ -41,6 +41,9 @@ public class ScheduleMaker {
 			hour++;
 			while(hour > 12) {
 				hour -= 12;
+			}
+			
+			if(hour == 12) {
 				if(partOfDay.equals("pm")) {
 					partOfDay = "am";
 				} else {
