@@ -2,6 +2,6 @@
 addPlane dog 0 0
 addPlane cat 1 1
 accelerate dog -1 -1
-updatePlanes
+movePlanes
 fire dog -2 2
-updatePlanes
+movePlanes

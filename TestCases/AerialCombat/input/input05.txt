@@ -3,8 +3,8 @@ addPlane HighFlyer 10 45
 addPlane LowFlyer 10 5
 accelerate HighFlyer 1 -1
 accelerate LowFlyer 1 1
-updatePlanes
-updatePlanes
-updatePlanes
+movePlanes
+movePlanes
+movePlanes
 fire LowFlyer 0 34
-updatePlanes
+movePlanes

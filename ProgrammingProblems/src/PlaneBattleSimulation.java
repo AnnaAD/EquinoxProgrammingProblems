@@ -44,7 +44,7 @@ public class PlaneBattleSimulation {
 						}
 					}
 				}
-			} else if(parts[0].equals("updatePlanes")) {
+			} else if(parts[0].equals("movePlanes")) {
 				for(Plane p : planes) {
 					p.update();
 				}

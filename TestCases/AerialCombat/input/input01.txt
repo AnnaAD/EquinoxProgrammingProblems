@@ -1,6 +1,6 @@
 5
 addPlane HighFlyer 10 45
-updatePlanes
+movePlanes
 accelerate HighFlyer 4 -4
-updatePlanes
-updatePlanes
+movePlanes
+movePlanes

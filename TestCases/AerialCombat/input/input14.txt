@@ -1,9 +1,9 @@
 8
 addPlane alpha 1000 -1000
 addPlane beta 0 0
-updatePlanes
+movePlanes
 fire alpha -1 1
-updatePlanes
+movePlanes
 addPlane beta 0 0
 fire alpha -1 1
-updatePlanes
+movePlanes
